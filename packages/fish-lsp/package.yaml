@@ -15,5 +15,6 @@ source:
     run: |
       yarn install --ignore-scripts --no-progress
       yarn compile
+      yarn setup
 bin:
   fish-lsp: node:bin/fish-lsp
