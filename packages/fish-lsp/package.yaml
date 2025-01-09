@@ -12,9 +12,6 @@ source:
   # renovate:datasource=github-tags
   id: pkg:github/ndonfris/fish-lsp@v1.0.8
   build:
-    run: |
-      yarn install --ignore-scripts --no-progress
-      yarn setup
-      yarn compile
+    run: yarn install --ignore-scripts --no-progress && yarn setup && yarn compile
 bin:
   fish-lsp: node:bin/fish-lsp
