@@ -9,9 +9,12 @@ languages:
 categories:
   - LSP
 source:
-  # renovate:datasource=git-refs
-  id : pkg:github/ndonfris/fish-lsp@ed156da25f71d99af5f51ee5d94ea798080677df
+  # renovate:datasource=github-tags
+  id: pkg:github/ndonfris/fish-lsp@v1.0.8
   build:
-    run: npm exec 'yarn@1' install
+    run: |
+      yarn install --ignore-scripts --no-progress
+      yarn setup
+      yarn compile
 bin:
   fish-language-server: node:bin/fish-lsp
