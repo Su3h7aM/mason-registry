@@ -1,5 +1,5 @@
 ---
-name: fish-language-server
+name: fish-lsp
 description: LSP implementation for the fish shell language
 homepage: https://fish-lsp.dev
 licenses:
@@ -17,4 +17,4 @@ source:
       yarn setup
       yarn compile
 bin:
-  fish-language-server: node:bin/fish-lsp
+  fish-lsp: node:bin/fish-lsp
